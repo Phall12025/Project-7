@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last Project · Movies</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navdiv">
+      <a href="#" class="logo">LYNE</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button class="signup">Sign Up</button></li>
+      </ul>
+    </nav>
+
+
+    <main class="container">
+      <section class="search">
+        <select id="filter" class="filter">
+        <option value=""disabled selected>Order by</option>
+        <option value="az">A-Z</option>
+        <option value="">Z-A</option>
+        </select>
+        <h1>Search Movies</h1>
+        <div class="search__bar">
+          <input id="searchInput" type="text" placeholder="e.g. Batman" />
+          <button id="searchBtn">Search</button>
+        </div>
+        <p class="help">Powered by OMDb</p>
+      </section>
+
+      <section id="results" class="results-grid"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+  <footer> 
+    <p>&copy; 2026 Lyne. All rights reserved.</p>
+  </footer>
+</html>
